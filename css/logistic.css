@@ -178,11 +178,11 @@ top: 0;
 
 .slide .slider .txtt p {
     font-size: 23px;
-    font-weight: var(--main-font);
+    font-family: var(--main-font);
 }
 .slide .slider .txtt h2 {
     font-size: 33px;
-    font-weight: var(--main-font);
+    font-family: var(--main-font);
 }
 
 
@@ -242,6 +242,13 @@ top: 0;
 .tabs .tab_item:hover .tab_img::before{
     visibility: hidden;
 }
+.tabs .tab_item h4.tab_tit{
+    font-family: var(--second-font);
+}
+.tabs .tab_item .tab_des{
+    font-family: var(--second-font);
+    color: #6d6d6d;
+}
 .tabs .tab_img span {
     display: table;
     margin: 0 auto;
@@ -284,13 +291,13 @@ top: 0;
     text-align: center;
 }
 .head-txt h3 {
-    font-weight: var(--main-font);
+    font-family: var(--main-font);
     font-weight: bold;
     font-size: 30px;
     color: black;
 }
 .head-txt h5 {
-    font-weight: var(--second-font);
+    font-family: var(--second-font);
     font-size: 16px;
     color: var(--color-one);
 }
@@ -703,38 +710,53 @@ padding-bottom: 50px;
     font-family: var(--second-font);
     font-size: 16px;
 }
-.end .row form input{
+.end  form input{
     direction: rtl;
     width: 100%;
     margin-bottom: 35px;
     border-radius: 5px;
     height: 40px;
+    padding-right: 10px;
     background-color: transparent;
     border: 1px solid #94829c;
     font-family: var(--second-font);
     color: #d4c1dc;
 
 } 
-.end .row form input::placeholder{
+.end  form input::placeholder{
     color: #d4c1dc;
     font-family: var(--second-font);
 }
-.end .row form input :nth-child(1){
+
+.end  form textarea{
+    direction: rtl;
+    width: 100%;
+    margin-bottom: 35px;
+    border-radius: 5px;
+    height: 190px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #94829c;
+    font-family: var(--second-font);
+    color: #d4c1dc;
+    resize: none;
+
+} 
+.end  form textarea::placeholder{
+    color: #d4c1dc;
+    font-family: var(--second-font);
+}
+
+.end  form input :nth-child(1){
     
 } 
-.end .row form .button  {
+.end  form .button  {
     width: 25%;
     background-color: var(--color-one);
     color: white;
     border-radius: 25px;
 } 
-.end .row form .name  {
-    width: 100%;
-    padding: 15px 10px 180px 0;
-    font-family: var(--second-font);
-    color: #d4c1dc;
-    
-} 
+
 .end li div{
     display: flex;
     color: #d4c1dc;
